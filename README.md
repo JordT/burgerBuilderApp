@@ -1,3 +1,7 @@
+This application is based on the tutorial here: https://www.udemy.com/course/react-the-complete-guide-incl-redux/
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
