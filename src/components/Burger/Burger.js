@@ -11,7 +11,7 @@ const burger = (props) => {
   //       return <BurgerIngredient key={igKey + i} type={igKey} />
   //     })
   //   })
-  // const transformedIngredients = 
+
   console.log(props);
   const transformedIngredients = (props) => {
     console.log(props + "<props is firing")
