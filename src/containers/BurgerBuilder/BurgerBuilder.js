@@ -12,13 +12,19 @@ function BurgerBuilder () {
   //       }
   //     }
     const [meat, changeMeat] = useState(0);
+    const [salad, changeSalad] = useState(2);
+    const [bacon, changeBacon] = useState(0);
+    const [cheese, changeCheese] = useState(0);
 
     return (
       <AuxHOC>
-        {/* <Burger ingredients={this.state.ingredients}/> */}
+        <Burger meat={meat} salad={salad} bacon={bacon} cheese={cheese}/>
         <div>Build Controls</div>
-        <button type="button" onClick={() => changeMeat(meat+1)}>Click Me</button>
-        <h2>Meat's back on the menu bois {meat}</h2>
+        {/* to be deleted  */}
+        <button type="button" onClick={() => changeMeat(meat+1)}>Add Meat</button>
+        <button type="button" onClick={() => changeMeat(meat-1)}>Remove Meat</button>
+        <h2>Meat's back on the menu bois {meat}</h2> 
+        {/* to be deleted  */}
       </AuxHOC>
     ) 
 }
