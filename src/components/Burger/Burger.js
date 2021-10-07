@@ -2,6 +2,7 @@ import React from 'react'
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient'
 
 import classes from './Burger.module.css'
+import burgerIngredient from './BurgerIngredient/BurgerIngredient'
 
 const burger = (props) => {
   // transforms the ingredients from state to an array
@@ -11,12 +12,22 @@ const burger = (props) => {
   //       return <BurgerIngredient key={igKey + i} type={igKey} />
   //     })
   //   })
+  // Console log props shows they are correct
+  console.log("Burger.js: Line 16: Keys are: " + Object.keys(props))
+  console.log("Burger.js: Line 17: Values are: " + Object.values(props))
 
-  console.log(props);
-  const transformedIngredients = (props) => {
-    console.log(props + "<props is firing")
-    return <BurgerIngredient type='meat'/>}
-  // need to pass transformed BurgerIngredient both a key=(meat?) and a type (mean)
+  // TransformedIngredients - needs a fucntion within it.
+  const transformedIngredients = () => {
+    Object.keys(props)
+      .map((ingKey) => {
+        console.log("There should be: " + props[ingKey] + " x " + ingKey)
+        return [...Array(props[ingKey])]
+          .map(()/*(_,i)*/ => {
+            // We get to here
+            return <BurgerIngredient /*key={i}*/ type={ingKey} />
+            })
+      })
+    }
 
   return (
     <div className={classes.Burger}>
