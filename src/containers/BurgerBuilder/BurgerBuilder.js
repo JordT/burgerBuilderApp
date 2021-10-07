@@ -11,10 +11,10 @@ function BurgerBuilder () {
   //         meat: 1
   //       }
   //     }
-    const [meat, changeMeat] = useState(0);
+    const [meat, changeMeat] = useState(1);
     const [salad, changeSalad] = useState(2);
-    const [bacon, changeBacon] = useState(0);
-    const [cheese, changeCheese] = useState(0);
+    const [bacon, changeBacon] = useState(1);
+    const [cheese, changeCheese] = useState(1);
 
     return (
       <AuxHOC>
