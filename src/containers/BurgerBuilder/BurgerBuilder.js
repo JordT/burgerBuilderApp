@@ -2,6 +2,7 @@ import React , { useState }from 'react'
 import Burger from '../../components/Burger/Burger.js'
 import AuxHOC from '../../hoc/AuxHOC'
 
+
 function BurgerBuilder () {
   // state = {
   //       ingredients : {
@@ -20,11 +21,14 @@ function BurgerBuilder () {
       <AuxHOC>
         <Burger meat={meat} salad={salad} bacon={bacon} cheese={cheese}/>
         <div>Build Controls</div>
-        {/* to be deleted  */}
         <button type="button" onClick={() => changeMeat(meat+1)}>Add Meat</button>
         <button type="button" onClick={() => changeMeat(meat-1)}>Remove Meat</button>
-        <h2>Meat's back on the menu bois {meat}</h2> 
-        {/* to be deleted  */}
+        <button type="button" onClick={() => changeSalad(salad+1)}>Add Salad</button>
+        <button type="button" onClick={() => changeSalad(salad-1)}>Remove Salad</button>
+        <button type="button" onClick={() => changeBacon(bacon+1)}>Add Bacon</button>
+        <button type="button" onClick={() => changeBacon(bacon-1)}>Remove Bacon</button>
+        <button type="button" onClick={() => changeCheese(cheese+1)}>Add Cheese</button>
+        <button type="button" onClick={() => changeCheese(cheese-1)}>Remove Cheese</button>
       </AuxHOC>
     ) 
 }
