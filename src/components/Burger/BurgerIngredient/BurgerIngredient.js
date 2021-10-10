@@ -9,7 +9,7 @@ const burgerIngredient = (props) => {
   switch (props.type) {
     case ('bread-bottom'):
       ingredient = <div className={classes.BreadBottom} />
-      console.log('[BurgerIngredient] Breadbottom is firing:'); break
+      break
     case ('bread-top'):
       ingredient = (
         <div className={classes.BreadTop}>
@@ -18,10 +18,10 @@ const burgerIngredient = (props) => {
         </div>
       )
       break
+    case ('cheese'):
+        ingredient = <div className={classes.Cheese} />; break
     case ('meat'):
       ingredient = <div className={classes.Meat} />; break
-    case ('cheese'):
-      ingredient = <div className={classes.Cheese} />; break
     case ('salad'):
       ingredient = <div className={classes.Salad} />; break
     case ('bacon'):
