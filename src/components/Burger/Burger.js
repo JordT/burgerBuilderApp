@@ -21,20 +21,17 @@ const burger = (props) => {
   const transformedIngredients = () => {
     Object.keys(props)
       .map((ingKey) => {
-        // console.log("There should be: " + props[ingKey] + " x " + ingKey)
         return [...Array(props[ingKey])]
           .map(()/*(_,i)*/ => {
-            // We get to here
-            console.log("line 27: IngKey is - " + ingKey)
             return render.push(<BurgerIngredient /*key={i}*/ type={ingKey} />)
             })
       })
     }
 
+  
   return (
     <div className={classes.Burger}>
       <BurgerIngredient type='bread-top' />
-      {/* <BurgerIngredient type='meat'/> */}
       {transformedIngredients()}
       {render}
       <BurgerIngredient type='bread-bottom' />

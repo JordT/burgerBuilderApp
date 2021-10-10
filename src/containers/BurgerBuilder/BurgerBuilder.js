@@ -17,6 +17,9 @@ function BurgerBuilder () {
     const [bacon, changeBacon] = useState(1);
     const [cheese, changeCheese] = useState(1);
 
+    const isZero = () => {
+    
+    }
     return (
       <AuxHOC>
         <Burger meat={meat} salad={salad} bacon={bacon} cheese={cheese}/>
