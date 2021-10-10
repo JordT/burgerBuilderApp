@@ -1,3 +1,20 @@
 .ButtonDisabled {
   color: #f75c5c;
 }
+
+.Container {
+    display : flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Ingredient {
+    border: grey;
+    border-style: solid;
+    border-width: thin;
+    padding: 2px;
+    border-radius: 8px;
+    max-width: 50%;
+    margin: 5px 5px 5px 5px;
+}
+
