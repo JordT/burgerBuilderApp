@@ -17,10 +17,11 @@ const burger = (props) => {
       })
     }
 
+  transformedIngredients()
+
   return (
     <div className={classes.Burger}>
       <BurgerIngredient type='bread-top' />
-      {transformedIngredients()}
       {render}
       <BurgerIngredient type='bread-bottom' />
     </div>
