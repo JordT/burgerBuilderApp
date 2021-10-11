@@ -2,3 +2,16 @@
     margin-top: 16px;
     text-align: center;
 }
+
+
+.Sidebar {
+    display: flex;
+    color:white;
+    background-color: black;
+    max-width: 20vw;
+    max-height: 600px;
+}
+
+.Sidebar:hover {
+    color: white;
+}

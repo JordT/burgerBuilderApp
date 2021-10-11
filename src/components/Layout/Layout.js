@@ -7,12 +7,13 @@ import classes from '../Layout/Layout.module.css'
 
 const layout = (props) => (
   <AuxHOC>
-    <Toolbar />
-    <Sidebar />
-    <div>SideDrawer and Backdrop</div>
-    <main className={classes.Content}>
-      {props.children}
-    </main>
+    <div className={classes.container}>
+      <Toolbar />
+      <Sidebar className={classes.Sidebar} />
+      <main className={classes.Content}>
+        {props.children}
+      </main>
+    </div>
   </AuxHOC>
 )
 
