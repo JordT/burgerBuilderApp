@@ -3,15 +3,6 @@
     text-align: center;
 }
 
-
-.Sidebar {
+.ConatinerTwo{
     display: flex;
-    color:white;
-    background-color: black;
-    max-width: 20vw;
-    max-height: 600px;
-}
-
-.Sidebar:hover {
-    color: white;
 }

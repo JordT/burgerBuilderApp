@@ -4,7 +4,7 @@ import classes from './Burger.module.css'
 
 const burger = (props) => {
 
-  // TransformedIngredients - needs a fucntion within it.
+  // TransformedIngredients - needs a function within it.
   const render = []
 
   const transformedIngredients = () => {

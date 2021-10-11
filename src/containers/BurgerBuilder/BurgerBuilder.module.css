@@ -4,8 +4,7 @@
 
 .Container {
     display : flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .Ingredient {
@@ -16,5 +15,9 @@
     border-radius: 8px;
     max-width: 50%;
     margin: 5px 5px 5px 5px;
+    align-content: flex-start;
 }
 
+.Controls {
+  display: flex;
+}
