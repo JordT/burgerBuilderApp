@@ -13,9 +13,9 @@ function BurgerBuilder () {
     return (
       <AuxHOC>
         <Burger meat={meat} salad={salad} bacon={bacon} cheese={cheese}/>
-        <div className={classes.Controls}>Build Controls</div>
         <div className={ classes.Container }> 
         {/* trying to get css to organise buttons */}
+        <div className={classes.Controls}>Build Controls</div>
           <div className={classes.Ingredient }>
             <button type="button" 
               className={(meat <= 2) ? null : classes.ButtonDisabled } 
