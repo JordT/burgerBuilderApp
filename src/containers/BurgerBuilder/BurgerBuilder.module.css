@@ -1,5 +1,22 @@
+.Button {
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #b3acac;
+  align-content: center;
+  width: 100%;
+}
+
+.Button:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24),0 8px 25px 0 rgba(0,0,0,0.19);
+}
+
 .ButtonDisabled {
   color: #f75c5c;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #b3acac;
+  align-content: center;;
+  width: 90%;
 }
 
 .Container {
@@ -13,7 +30,7 @@
     border-width: thin;
     padding: 2px;
     border-radius: 8px;
-    max-width: 50%;
+    max-width: 60%;
     margin: 5px 5px 5px 5px;
     align-content: flex-start;
 }
